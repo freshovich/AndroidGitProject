@@ -7,13 +7,13 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/main_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
         android:text="@string/greetings"
         android:textSize="24dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:id="@+id/main_textview"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -33,13 +33,15 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
             android:text="@string/button" />
+
         <EditText
             android:id="@+id/main_edittext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
-            android:hint="@string/hint" />
+            android:hint="@string/hint"
+            android:minHeight="48dp" />
 
         <ListView
             android:id="@+id/main_listview"
@@ -49,22 +51,24 @@
             android:layout_weight="1" />
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-            <Button
-                android:id="@+id/ok_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="OK"/>
-            <Button
-                android:id="@+id/cnc_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="cancel" />
-        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/ok_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="OK" />
+
+                    <Button
+                        android:id="@+id/cnc_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="cancel" />
+                </LinearLayout>
     </LinearLayout>
 </LinearLayout>
